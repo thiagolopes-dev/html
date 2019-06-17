@@ -1,0 +1,37 @@
+/* Meu primeiro Teste de CSS */
+
+p{
+color: red;
+font-size: 50px;
+}
+body{
+
+    background-color: black;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+header{
+
+    background-color: green;
+    height: 100px;
+}
+
+#div_esquerda {
+
+    background-color: blueviolet
+}
+
+#div_direita {
+
+    background-color: brown;
+}
+
+footer{
+
+    background-color: blue;
+    height: 80px;
+}
