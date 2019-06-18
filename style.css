@@ -1,37 +1,51 @@
 /* Meu primeiro Teste de CSS */
-
 p{
-color: red;
-font-size: 50px;
+color: white;
+text-shadow:  1px 1px 1px #111111;
+font-size: 18px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 body{
-
     background-color: black;
 }
-
 *{
     margin:0px;
     padding:0px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 header{
-
-    background-color: green;
-    height: 100px;
-}
-
-#div_esquerda {
-
-    background-color: blueviolet
-}
-
-#div_direita {
-
-    background-color: brown;
-}
-
-footer{
-
-    background-color: blue;
+    background-color: #35b8b0;
     height: 80px;
+    padding: 20px;
+}
+footer{
+    clear: both;
+    background-color:#35b8b0;
+    height: 80px;
+    text-align: center;
+    padding: 10px;   
+}
+h1{
+    color:  #35b8b0; 
+    text-shadow:  1px 1px 1px #111111;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+#principal{
+    background-image:url('City-of-the-future.jpg'); 
+    background-size: 100%;
+    min-height: 300px; 
+    padding: 50px 0 0 0;
+}
+.container {
+
+    width: 960px;
+    margin:0 auto;
+    
+}
+
+.efeito {
+
+    background-color: rgba(0,0,0,0.5);
+    padding: 80px 0 80px 0 ;
 }
