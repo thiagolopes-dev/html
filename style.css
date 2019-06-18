@@ -33,9 +33,29 @@ h1{
 }
 #principal{
     background-image:url('City-of-the-future.jpg'); 
+    clear: both;
     background-size: 100%;
     min-height: 300px; 
     padding: 50px 0 0 0;
+}
+#logo{
+    float: left;
+}
+#menu{
+    float: right;
+    margin-top: 30px;
+}
+#menu a {
+    padding: 52px;
+    
+   text-decoration: none;
+   color: #111111;
+   
+}
+
+#menu a:hover{
+    background-color: #5F9EA0;
+    color: #111111;
 }
 .container {
 
@@ -49,3 +69,4 @@ h1{
     background-color: rgba(0,0,0,0.5);
     padding: 80px 0 80px 0 ;
 }
+
