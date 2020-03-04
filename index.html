@@ -1,71 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+<meta charset="utf-8">
+<link rel="shorcut icon" href="dev.png">
 <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="lupusicon.webp">
-    <title>Hello World</title>
-    <!-- Aplica a cor vermelha para todos elementos do tipo parágrafo -->
+    <title>Aula Html</title>
+
+<!-- O Elemento style aplica as regras css para os elementos definidos a seguir-->
     <style>
-        p { color: red; }
-    </style> 
+
+body {
+    background-color: #F2FFFC;
+    font-family: "Crimson Text", serif;
+}
+p{
+    color: blue; 
+}
+h1{
+    color: green;
+
+}
+/* Seletor por classe */
+h1 .h1center {
+ color: white;
+ text-align: center;
+ font-family: monospace;
+ /* A propriedade background-color é especificada como um único valor de color . */
+ background-color:black;
+ 
+}
+ h1 .h1sombra{
+    color: red;
+    text-shadow: 10px 6px 10px black;
+}
+h2{
+    color:yellow;   
+}
+h3{
+    /*Todos os valores abaixo se referem a cor vermelha no CSS, sendo aplicadas de 4 formas diferentes!*/
+    color:red;
+    /* color:#ff0000; */
+    /* color:rgb(255,0,0); */
+    /* color:rgba(255,0,0,1); */
+}
+h6{
+    color:violet
+}
+
+ /* Use este seletor atributo footer em um elemento para atribuir um ID a esse elemento. O nome do ID é de sua escolha porem ele deve ser único no documento. */
+#footer {
+
+  background: #222831;
+  /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas */
+  padding: 40px 10px 10px;
+  /* A propriedade margin do CSS define a área de margem nos quatro lados do elemento */
+  margin: 10px;
+  
+  
+}
+#footer p {
+  text-align: center;
+  color:white;
+  /* A propriedade CSS letter-spacing específica o comportamento do espaçamento entre caracteres de texto */
+  letter-spacing: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+    </style>
 </head>
 <body>
-    
-    <header></header>
-    
-    <div> TAGS HTML !</div>
-    <hr>
-    <p>Hello World !</p>
-    <h1>Título h1</h1>
-    <h2>Título h2</h2>
-    <h3>Título h3</h3>
-    <h4>Título h4</h4>
-    <h5>Título h5</h5>
-    <h6>Título h6</h6>
-    
-    <p >
-        <b>Texto em negrito</b><br>
-        <i>Texto em itálico</i><br>
+    <!-- O elemento HTML Div define uma divisão ou seção em um documento HTML -->
+<h1><div class="h1center">TAGS HTML !</div></h1>
+<!-- O elemento HTML <span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ). -->
+<h1><span class="h1sombra">Titulo com Sombra</span> </span></h1>
+<h1>Titulo H1</h1>
+<h2>Titulo H2</h2>
+<h3>Titulo H3</h3>
+<h4>Titulo H4</h4>
+<h5>Titulo H5</h5>
+<h6>Titulo H6</h6>
+
+<!-- O Elemento hr Destina-se a inserir uma Régua Horizontal (HR é a abreviatura de Horizontal Rule – em inglês) -->
+<hr>
+
+    <p>Isto é um parágrafo...
+        <b>Texto em Negrito</b><br>
+        <i>Texto em Itálico</i><br>
         <u>Texto sublinhado</u><br>
-        <sub>Texto subscrito</sub><br>
-        <sup>Texto sobrescrito</sup><br>
-        <small>Texto com fonte menor do que o padrão</small><br>
-        <em>Texto em itálico</em><br>
-        <strong>Texto em negrito</strong>
-    </p>
+        <sub>Texto Sobrescrito</sub><br> 
+        <small>Texto com fonte menor do que padrão</small><br>
+        <em>Texto em Itálico</em><br>
+        <strong>Texto em Negrito</strong><br>
 
-    <p font style="font-family: 'Times New Roman'">Olá, mundo!</p>
+</p>
+
+<p font style="font-family: 'Times New Roman'"">Sou uma fonte Times</p>
     
-    <!-- Declarando duas possíveis fontes -->
-    <p font style="font-family: 'Helvetica, Arial'">Olá, mundo novamente!</p>
+<p font style="font-family: 'Helvetica, Arial'">Sou duas possiveis fontes Helvetica e Arial</p>
 
-    <a href="#">Tag a Cria Hyperlink</a></br>
 
-    <abbr title="Abreviação">Abreviação</abbr>
+<a href="https://www.uol.com.br" target="_blank">Sou um Hiperlink Curioso</a><br>
 
-    <address>Endereço: Ivete</address>
+<abbr title="Abreviação">Abreciação</abbr>
 
-    <blockquote>Citação Longa</blockquote>
+<address>Endereço</address>
 
-    <button>Botão de Comando</button></br>
+<blockquote>Citação Longa</blockquote>
 
-    <del> Texto deletado</del>
+<button>Botão de Comando</button><br>
 
-    <hr>
+<del>Texto Deletado</del>
 
-    <ol>
-            <li>Primeiro elemento</li>
-            <li>Segundo elemento</li>
-            <li>Terceiro elemento</li>
-            </ol>
-            <!-- Lista não ordenada -->
-            <ul>
-            <li>Primeiro elemento</li>
-            <li>Segundo elemento</li>
-            <li>Terceiro elemento</li>
-            </ul>
+<hr>
+<!-- Lista Ordenada -->
+<ol>
+<li> Primeiro Elemento</li>
+<li>Segundo Elemento</li>
+<li>Terceiro Elemento</li>
+</ol>
+<!-- Lista não Ordenada -->
+<ul>
+    <li>Primeiro Elemento</li>
+    <li>Segundo Elemento</li>
+    <li>Terceiro Elemento</li>
+</ul>
+
+<!-- Footer representa um rodapé -->
+<footer>
+    <div id="footer">
+        <p> Minha Primeira Página Web</p>
+    </div>
+
     
-    <footer></footer>
-    
+</footer>
+
+   
 </body>
 </html>
