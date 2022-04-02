@@ -1,315 +1,332 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <meta charset="utf-8">
-<link rel="shorcut icon" href="dev.png">
+<link rel="shorcut icon" href="assets/icons/dev.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="HTML5 e CSS3 Base">
+<meta name="author" content="@thiagoolopess">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="/css/style.min.css"> -->
+<link rel="stylesheet" href="/css/style.css">
+
 <head>
     <title>Aula Html</title>
 
-    <!-- O Elemento style aplica as regras css para os elementos definidos a seguir-->
-    <style>
+    <!-- O Elemento style aplica as regras css para os elementos definidos a seguir - Forma inline de definir CSS-->
+    <!-- <style>
         body {
             background-color: #F2FFFC;
             font-family: "Crimson Text", serif;
         }
-        p{
-            color: blue; 
+
+        p {
+            color: blue;
         }
-        h1{
+
+        h1 {
             color: green;
-        
         }
+
         /* Seletor por classe */
-        h1 .h1center {
-         color: white;
-         text-align: center;
-         font-family: monospace;
-         /* A propriedade background-color é especificada como um único valor de color . */
-         background-color:black;
-         
+        .h1center h1 {
+            color: white;
+            text-align: center;
+            font-family: monospace;
+            /* A propriedade background-color é especificada como um único valor de color . */
+            background-color: black;
         }
-         h1 .h1sombra{
+
+        .h1sombra h1 {
             color: red;
             text-shadow: 10px 6px 10px black;
         }
-        h2{
-            color:yellow;   
+
+        h2 {
+            color: yellow;
         }
-        h3{
+
+        h3 {
             /*Todos os valores abaixo se referem a cor vermelha no CSS, sendo aplicadas de 4 formas diferentes!*/
-            color:red;
+            color: red;
             /* color:#ff0000; */
             /* color:rgb(255,0,0); */
             /* color:rgba(255,0,0,1); */
         }
-        h6{
-            color:violet
+
+        h6 {
+            color: violet
         }
-        
-         /* Use este seletor atributo footer em um elemento para atribuir um ID a esse elemento. O nome do ID é de sua escolha porem ele deve ser único no documento. */
+
+        /* Use este seletor atributo footer em um elemento para atribuir um ID a esse elemento. O nome do ID é de sua escolha porem ele deve ser único no documento. */
         #footer {
-        
-          background: #222831;
-          /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas */
-          padding: 40px 10px 10px;
-          /* A propriedade margin do CSS define a área de margem nos quatro lados do elemento */
-          margin: 10px;
-          
+            background: #222831;
+            /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas */
+            padding: 40px 10px 10px;
+            /* A propriedade margin do CSS define a área de margem nos quatro lados do elemento */
+            margin: 10px;
         }
+
         #footer p {
-          text-align: center;
-          color:white;
-          /* A propriedade CSS letter-spacing específica o comportamento do espaçamento entre caracteres de texto */
-          letter-spacing: 5px;
-          font-size: 14px;
-          text-transform: uppercase;
+            text-align: center;
+            color: white;
+            /* A propriedade CSS letter-spacing específica o comportamento do espaçamento entre caracteres de texto */
+            letter-spacing: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
         }
-            </style>
+    </style> -->
 
-  <!-- HTML5 Componentes -->
+    <!-- HTML5 Componentes -->
 
-<!-- O <header> é utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. -->
-<header>
-     <h1>Título da página</h1>
-     <h2>Subtítulo da página</h2>
-</header>
+    <!-- O <header> é utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. -->
+    <header>
+        <h1>Título da página</h1>
+        <h2>Subtítulo da página</h2>
+    </header>
 
-<!-- O elemento <section> representa uma seção dentro de um documento e geralmente contém um título -->
-<section>
-    <h3>Seção 1</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
-</section>
+    <!-- O elemento <section> representa uma seção dentro de um documento e geralmente contém um título -->
+    <section>
+        <h3>Seção 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+    </section>
 
-<!-- Utilizamos o elemento <article> quando precisamos declarar um conteúdo que não precisa de outro para fazer sentido em um documento HTML, por exemplo, um artigo em um blog. É recomendado identificar cada <article> com um título -->
-<article>
-    <h3>Título do artigo 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
-</article>              
-<article>
-    <h3>Título do artigo 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
-</article>
+    <!-- Utilizamos o elemento <article> quando precisamos declarar um conteúdo que não precisa de outro para fazer sentido em um documento HTML, por exemplo, um artigo em um blog. É recomendado identificar cada <article> com um título -->
+    <article>
+        <h3>Título do artigo 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+    </article>
+    <article>
+        <h3>Título do artigo 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+    </article>
 
-<!-- O elemento <nav> é utilizado quando precisamos representar um agrupamento de links de navegação, que, por sua vez, são criados com os elementos <ul>, <li> e <a>. -->
+    <!-- O elemento <nav> é utilizado quando precisamos representar um agrupamento de links de navegação, que, por sua vez, são criados com os elementos <ul>, <li> e <a>. -->
 
-<nav>
- <ul>       
- <li><a href=”#”>pagina 1</a></li>
- <li><a href=”#”>pagina 2</a></li>
- <li><a href=”#”>pagina 3</a></li>
- <li><a href=”#”>pagina 4</a></li>
- </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#">pagina 1</a></li>
+            <li><a href="#">pagina 2</a></li>
+            <li><a href="#">pagina 3</a></li>
+            <li><a href="#">pagina 4</a></li>
+        </ul>
+    </nav>
 
-<!-- O elemento <aside> é utilizado quando precisamos criar um conteúdo de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de HTML semântico, podemos indicar ao leitor outros conteúdos sobre a linguagem HTML como sugestão de leitura complementar. -->
+    <!-- O elemento <aside> é utilizado quando precisamos criar um conteúdo de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de HTML semântico, podemos indicar ao leitor outros conteúdos sobre a linguagem HTML como sugestão de leitura complementar. -->
 
-<aside>
-  <nav>
-    <ul>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 4</li>
-     </ul>
-  </nav>
-</aside>
+    <aside>
+        <nav>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+            </ul>
+        </nav>
+    </aside>
 
-<!-- O elemento <main> especifica o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal. -->
+    <!-- O elemento <main> especifica o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal. -->
 
-<main>
-  <h2>Titulo</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
-  
-  <article>
-     <h3>Subtítulo</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum...</p>
-   </article>
-</main>
+    <main>
+        <h2>Titulo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
 
-<!-- O elemento <figure> é uma marcação de uso específico para a inserção de uma figura. -->
+        <article>
+            <h3>Subtítulo</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum...</p>
+        </article>
+    </main>
 
-<figure>
-  <img src=”http://meusite.com.br/assets/imagem.jpg” alt=”Imagem”>
-</figure>
+    <!-- O elemento <figure> é uma marcação de uso específico para a inserção de uma figura. -->
 
-<!-- O elemento <cite> é utilizado para declarar que naquele trecho há uma citação, isto é, um trecho de texto que não foi escrito pelo autor do conteúdo.  -->
+    <figure>
+        <img src="assets/images/City-of-the-future.jpg" width="100px" alt="Imagem de cidade do futuro">
+    </figure>
 
-<p>
-<q>Lorem ipsum dolor sit amet, consectetur </q> - <cite>http://br.lipsum.com/</cite>.
-</p>
+    <!-- O elemento <cite> é utilizado para declarar que naquele trecho há uma citação, isto é, um trecho de texto que não foi escrito pelo autor do conteúdo.  -->
+
+    <p>
+        <q>Lorem ipsum dolor sit amet, consectetur </q> - <cite>http://br.lipsum.com/</cite>.
+    </p>
 </head>
+
 <body>
     <!-- O elemento HTML Div define uma divisão ou seção em um documento HTML -->
-<h1><div class="h1center">TAGS HTML !</div></h1>
-<!-- O elemento HTML <span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ). -->
-<h1><span class="h1sombra">Titulo com Sombra</span></h1>
-<h1>Titulo H1</h1>
-<h2>Titulo H2</h2>
-<h3>Titulo H3</h3>
-<h4>Titulo H4</h4>
-<h5>Titulo H5</h5>
-<h6>Titulo H6</h6>
+    <h1>
+        <div class="h1center">TAGS HTML !</div>
+    </h1>
+    <!-- O elemento HTML <span> é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos class ou id ). -->
+    <h1><span class="h1sombra">Titulo com Sombra</span></h1>
+    <h1>Titulo H1</h1>
+    <h2>Titulo H2</h2>
+    <h3>Titulo H3</h3>
+    <h4>Titulo H4</h4>
+    <h5>Titulo H5</h5>
+    <h6>Titulo H6</h6>
 
-<!-- O Elemento hr Destina-se a inserir uma Régua Horizontal (HR é a abreviatura de Horizontal Rule – em inglês) -->
-<hr>
+    <!-- O Elemento hr Destina-se a inserir uma Régua Horizontal (HR é a abreviatura de Horizontal Rule – em inglês) -->
+    <hr>
 
     <p>Isto é um parágrafo...
         <b>Texto em Negrito</b><br>
         <i>Texto em Itálico</i><br>
         <u>Texto sublinhado</u><br>
-        <sub>Texto Sobrescrito</sub><br> 
+        <sub>Texto Sobrescrito</sub><br>
         <small>Texto com fonte menor do que padrão</small><br>
         <em>Texto em Itálico</em><br>
         <strong>Texto em Negrito</strong><br>
         <mark>Texto Marcado</mark>
-        <p> <ins>Parte Nova</ins>,<del>Parte Deletada</del> </p>
+    <p> <ins>Parte Nova</ins>,<del>Parte Deletada</del> </p>
 
-</p>
+    </p>
 
-<p font style="font-family: 'Times New Roman'"">Sou uma fonte Times</p>
+    <p font style="font-family: 'Times New Roman'">Sou uma fonte Times</p>
     
-<p font style="font-family: 'Helvetica, Arial'">Sou duas possiveis fontes Helvetica e Arial</p>
+<p font style=" font-family: 'Helvetica, Arial'">Sou duas possiveis fontes Helvetica e Arial</p>
 
 
-<a href="https://www.uol.com.br" target="_blank">Sou um Hiperlink Curioso</a><br>
+<a href=" https://www.uol.com.br" target="_blank">Sou um Hiperlink Curioso</a><br>
 
-<abbr title="Abreviação">Abreciação</abbr>
+        <abbr title="Abreviação">Abreciação</abbr>
 
-<address>Endereço</address>
+    <address>Endereço</address>
 
-<blockquote>Citação Longa</blockquote>
+    <blockquote>Citação Longa</blockquote>
 
-<button>Botão de Comando</button><br>
+    <button>Botão de Comando</button><br>
 
-<del>Texto Deletado</del>
+    <del>Texto Deletado</del>
 
 
-<hr>
-<!-- Lista Ordenada -->
-<ol>
-<li> Primeiro Elemento</li>
-<li>Segundo Elemento</li>
-<li>Terceiro Elemento</li>
-</ol>
-<!-- Lista não Ordenada -->
-<ul>
-    <li>Primeiro Elemento</li>
-    <li>Segundo Elemento</li>
-    <li>Terceiro Elemento</li>
-</ul>
+    <hr>
+    <!-- Lista Ordenada -->
+    <ol>
+        <li> Primeiro Elemento</li>
+        <li>Segundo Elemento</li>
+        <li>Terceiro Elemento</li>
+    </ol>
+    <!-- Lista não Ordenada -->
+    <ul>
+        <li>Primeiro Elemento</li>
+        <li>Segundo Elemento</li>
+        <li>Terceiro Elemento</li>
+    </ul>
 
-<table>
-    <tr>
-        <td>Linha 1, Coluna 1</td>
-        <td>Linha 1, Coluna 2</td>
-    </tr>
-    <tr>
-        <td>Linha 2, Coluna 1</td>
-        <td>Linha 2, Coluna 2</td>
-    </tr>
-    <tr>
-        <td>Linha 3, Coluna 1</td>
-        <td>Linha 3, Coluna 2</td>
-    </tr>
-</table>
-<hr>
-
-<!-- thead para o cabeçalho; tbody para o corpo; e tfoot para o rodapé -->
-<table>
-    <thead>
+    <table>
         <tr>
-            <th>Produto</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Feijão</td>
-            <td>R$ 8,75</td>
-            <td>1</td>
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
         </tr>
         <tr>
-            <td>Arroz</td>
-            <td>R$ 4,99</td>
-            <td>2</td>
+            <td>Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
         </tr>
-    </tbody>
-    <tfoot>
         <tr>
-            <td>Total</td>
-            <td></td>
-            <td>R$ 18,73</td>
+            <td>Linha 3, Coluna 1</td>
+            <td>Linha 3, Coluna 2</td>
         </tr>
-    </tfoot>
-</table>
-<hr>
+    </table>
+    <hr>
 
-<!-- cada item é composto por um título (dt) e uma definição (dd), semelhante ao que ocorre em dicionários, nos quais temos os verbetes e suas definições -->
-<dl>
-    <dt>Título 1</dt>
-    <dd>Definição 1</dd>
-    <dt>Título 2</dt>
-    <dd>Definição 2</dd>
-    <dt>Título 3</dt>
-    <dd>Definição 3</dd>
-</dl>
-<hr>
+    <!-- thead para o cabeçalho; tbody para o corpo; e tfoot para o rodapé -->
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feijão</td>
+                <td>R$ 8,75</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Arroz</td>
+                <td>R$ 4,99</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>R$ 18,73</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
 
-<!-- geralmente usamos a tag form para delimitar a área na qual se encontram os campos a serem preenchidos pelo usuário, -->
-<form action="salvar_dados.php" method="post">
-    <input type="text" placeholder="Digite aqui"> <br/>
-    <input type="checkbox">Checkbox <br/>
-    <input type="radio">Radio button <br/>
-    <input type="range"> <br/>
-    <input type="submit" value="Enviar">
-</form>
-<hr>
+    <!-- cada item é composto por um título (dt) e uma definição (dd), semelhante ao que ocorre em dicionários, nos quais temos os verbetes e suas definições -->
+    <dl>
+        <dt>Título 1</dt>
+        <dd>Definição 1</dd>
+        <dt>Título 2</dt>
+        <dd>Definição 2</dd>
+        <dt>Título 3</dt>
+        <dd>Definição 3</dd>
+    </dl>
+    <hr>
+
+    <!-- geralmente usamos a tag form para delimitar a área na qual se encontram os campos a serem preenchidos pelo usuário, -->
+    <form action="salvar_dados.php" method="post">
+        <input type="text" placeholder="Digite aqui"> <br />
+        <input type="checkbox">Checkbox <br />
+        <input type="radio">Radio button <br />
+        <input type="range"> <br />
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
 
 
-<audio controls src="musica.mp3" >
-    Seu browser não suporta áudio.
-</audio> 
-<hr>
+    <audio controls src="musica.mp3">
+        Seu browser não suporta áudio.
+    </audio>
+    <hr>
 
-<video width="640" height="480" controls>
-    <source src="video.webm" type="video/webm">
-    <source src="video.mp4" type="video/mp4">
-</video>
-<hr>
+    <video width="640" height="480" controls>
+        <source src="video.webm" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <hr>
 
 
-<!-- Div e Span no HTML
+    <!-- Div e Span no HTML
 As tags div e span são duas das mais utilizadas no HTML, com objetivos distintos, porém com grande importância para a composição do layout das páginas e formatação do texto.
 
 As divs são normalmente utilizados para representarem containers para outros elementos, agrupando-os visualmente dentro de um bloco que pode conter dimensões e posição definidas. Por padrão, uma div não possui aparência características visuais definidas, isso precisa ser feito via CSS ao atribuir bordas, cores etc. Sua principal característica, no entanto, é que essa tag representa um elemento do tipo bloco, ou seja, que quando adicionado na página, automaticamente gera uma nova linha no layout (semelhante a um parágrafo), ao invés de ser alocado lateralmente nos demais componentes. -->
 
 
-<input type="text" value="input 1">
-<input type="text" value="input 2">
-<div><input type="text" value="input 3"></div>
-<div><input type="text" value="input 4"></div>
+    <input type="text" value="input 1">
+    <input type="text" value="input 2">
+    <div><input type="text" value="input 3"></div>
+    <div><input type="text" value="input 4"></div>
 
-<hr>
+    <hr>
 
-<!-- Já a tag span é um elemento do tipo inline, ou seja, quando adicionado na página, ele é inserido lateralmente após os demais componentes, diferente das divs que são elementos do tipo bloco.
+    <!-- Já a tag span é um elemento do tipo inline, ou seja, quando adicionado na página, ele é inserido lateralmente após os demais componentes, diferente das divs que são elementos do tipo bloco.
 
 Elementos span, por padrão, também não possuem nenhuma característica visual definida, isso precisa ser feito via CSS para destacar ou aplicar uma formatação especial para um certo trecho do texto. Por exemplo, a Listagem 19 demonstra o uso do span em dois casos. No primeiro, a tag não conta com nenhum atributo adicional; no segundo, adicionamos a ela uma aparência diferenciada via CSS. -->
 
-<p>Este é um texto com um <span>
-   trecho em destaque</span>.</p>
-<p>
-    Este é um texto com um <span
-    style="background: #1abc9c; border-radius:5px; padding:5px">
-    trecho em destaque</span>.
-</p>
+    <p>Este é um texto com um <span>
+            trecho em destaque</span>.</p>
+    <p>
+        Este é um texto com um <span style="background: #1abc9c; border-radius:5px; padding:5px">
+            trecho em destaque</span>.
+    </p>
 
-<!-- Footer representa um rodapé -->
-<footer>
-    <div id="footer">
-        <p> Minha Primeira Página Web</p>
-        <p>E-mail:</p><a href="mailto:aula@kroton.com.br"><p> aula@kroton.com.br </p></a>
-        <p>Localização:<a href="https://www.google.com.br/maps/place/Unopar/@-23.3870037,-51.4515467,17z/data=!3m1!4b1!4m5!3m4!1s0x94eca46c9078f531:0xfda8632394cedceb!8m2!3d-23.3870037!4d-51.449358" target="_blank">Estou aqui !</a></p>
-    </div>
-</footer>
+    <!-- Footer representa um rodapé -->
+    <footer>
+        <div id="footer">
+            <p> Minha Primeira Página Web</p>
+            <p>E-mail:</p><a href="mailto:aula@kroton.com.br">
+                <p> aula@kroton.com.br </p>
+            </a>
+            <p>Localização:<a
+                    href="https://www.google.com.br/maps/place/Unopar/@-23.3870037,-51.4515467,17z/data=!3m1!4b1!4m5!3m4!1s0x94eca46c9078f531:0xfda8632394cedceb!8m2!3d-23.3870037!4d-51.449358"
+                    target="_blank">Estou aqui !</a></p>
+        </div>
+    </footer>
 </body>
 </html>

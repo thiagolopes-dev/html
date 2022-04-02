@@ -1,0 +1,64 @@
+body {
+    background-color: #F2FFFC;
+    font-family: "Crimson Text", serif;
+}
+
+p {
+    color: blue;
+}
+
+h1 {
+    color: green;
+
+}
+
+/* Seletor por classe */
+h1 .h1center  {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    /* A propriedade background-color é especificada como um único valor de color . */
+    background-color: black;
+
+}
+
+h1 .h1sombra  {
+    color: red;
+    text-shadow: 10px 6px 10px black;
+}
+
+h2 {
+    color: yellow;
+}
+
+h3 {
+    /*Todos os valores abaixo se referem a cor vermelha no CSS, sendo aplicadas de 4 formas diferentes!*/
+    color: red;
+    /* color:#ff0000; */
+    /* color:rgb(255,0,0); */
+    /* color:rgba(255,0,0,1); */
+}
+
+h6 {
+    color: violet
+}
+
+/* Use este seletor atributo footer em um elemento para atribuir um ID a esse elemento. O nome do ID é de sua escolha porem ele deve ser único no documento. */
+#footer {
+
+    background: #222831;
+    /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas */
+    padding: 40px 10px 10px;
+    /* A propriedade margin do CSS define a área de margem nos quatro lados do elemento */
+    margin: 10px;
+
+}
+
+#footer p {
+    text-align: center;
+    color: white;
+    /* A propriedade CSS letter-spacing específica o comportamento do espaçamento entre caracteres de texto */
+    letter-spacing: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
